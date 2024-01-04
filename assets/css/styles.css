@@ -1,17 +1,8 @@
 
-
-
-
-
-
-
-
-
-
-
 h1, h2, h3 , h4, h5, h6 {
+    padding: 25px;
     font-family: 'Gloria Hallelujah', cursive;
-  }
+  
   p {
     font-family: 'Jura', sans-serif;
   }
@@ -22,6 +13,12 @@ h1, h2, h3 , h4, h5, h6 {
     --tert-colour: ;
   }
 
+#about_us{
+    display: flex;
+    font-family: verdana;
+    font-size: 3px;
+  }
+  
 .Hero-banner{
     height: calc(100vh - 25px);
     background-image: url(../images/giphy.gif);
@@ -49,5 +46,3 @@ h1, h2, h3 , h4, h5, h6 {
     -o-transform: translateY(-7px);
     transform: translateY(-7px);
 }
-
-
