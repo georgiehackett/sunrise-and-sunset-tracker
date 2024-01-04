@@ -1,0 +1,20 @@
+.results-cards{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.card-body{
+    font-size: 10px;
+
+}
+
+.btn-primary{
+    color: black;
+}
