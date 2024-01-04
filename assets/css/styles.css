@@ -1,0 +1,19 @@
+h1, h2, h3 , h4, h5, h6 {
+    padding: 25px;
+
+  }
+  p {
+    font-family: 'Jura', sans-serif;
+  }
+  
+  :root {
+    --prim-colour: ;
+    --second-colour: ;
+    --tert-colour: ;
+  }
+
+#about_us{
+    display: flex;
+    font-family: verdana;
+    font-size: 3px;
+  }
