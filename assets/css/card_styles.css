@@ -1,0 +1,29 @@
+.Hero-banner-resultsgif{
+    height: calc(100vh - 25px);
+    background-image: url(../images/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.results-cards{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.card-body{
+    font-size: 10px;
+
+}
+
+.btn-primary{
+    color: rgb(255, 255, 255);
+}
