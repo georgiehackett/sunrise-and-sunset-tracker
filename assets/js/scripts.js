@@ -51,5 +51,6 @@ async function fetchData() {
   }
 }
 
+
 // Call the async function
 fetchData();
