@@ -1,4 +1,5 @@
 
+
 const searchInput = document.getElementById('searchInput');
     const selectedCities = document.getElementById('selectedCities');
     const searchButton = document.getElementById('searchButton');
