@@ -25,7 +25,7 @@ h1, h2, h3 , h4, h5, h6 {
     padding: 25px;
     font-family: 'Gloria Hallelujah', cursive;
 }
-  
+
   p {
     font-family: 'Jura', sans-serif;
   }
@@ -68,4 +68,29 @@ h1, h2, h3 , h4, h5, h6 {
     -ms-transform: translateY(-7px);
     -o-transform: translateY(-7px);
     transform: translateY(-7px);
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
 }
