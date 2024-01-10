@@ -40,6 +40,7 @@ localStorage.getItem('userInput');
     const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${encodeURIComponent(
       searchInputValue
     )}&minPopulation=1000000&limit=10`;
+    window.localStorage.setItem('geoDBURL', url.value)
 
     const options = {
       method: "GET",
