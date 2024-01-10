@@ -61,9 +61,16 @@ fetch(queryURL)
     return response.json();
 })
 .then(function(data) {
-    console.log(data);
-    console.log(data.results.sunrise);
-    console.log(data.results.sunset);
-    console.log(data.results.golden_hour);
-    console.log(data.results.timezone);
-})
+    // console.log(data);
+    var sunrise = data.results.sunrise;
+    console.log('Sunrise: ' + sunrise);
+
+    var sunset = data.results.sunset;
+    console.log('Sunset: ' + sunset);
+    
+    var goldenHour = data.results.golden_hour;
+    console.log('Golden Hour: ' + goldenHour);
+
+    var timezone = data.results.timezone;
+    console.log('Timezone: ' + timezone);
+});
