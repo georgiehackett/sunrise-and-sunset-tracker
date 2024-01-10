@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", () => {
     var geoDBURL = window.localStorage.getItem('geoDBURL');
     console.log(geoDBURL);
+    var options = window.localStorage.getItem('options')
+    console.log(options);
     
-
   // Build URL to query sunrisesunset API
   var lat = "";
   var lng = "";

@@ -40,16 +40,17 @@ localStorage.getItem('userInput');
     const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${encodeURIComponent(
       searchInputValue
     )}&minPopulation=1000000&limit=10`;
-    window.localStorage.setItem('geoDBURL', url.value)
+    window.localStorage.setItem('geoDBURL', url)
 
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "727bf2a82fmshefe63c31b6e70d3p1bee3djsnb96f9b215838",
+        "X-RapidAPI-Key": '727bf2a82fmshefe63c31b6e70d3p1bee3djsnb96f9b215838',
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
         "Content-Type": "application/json",
       },
     };
+    window.localStorage.setItem('options', JSON.stringify(options));
 
     try {
       const response = await fetch(url, options);
@@ -96,4 +97,5 @@ localStorage.getItem('userInput');
       selectedCities.style.display = "none";
     }
   });
+
 });
