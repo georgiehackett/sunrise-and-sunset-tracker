@@ -52,7 +52,8 @@
 
 //   getLocalBusinessData();
 
-
+var lat = '';
+var lng = '';
 var queryURL = 'https://api.sunrisesunset.io/json?lat=38.907192&lng=-77.036873'
 
 fetch(queryURL)
@@ -61,4 +62,8 @@ fetch(queryURL)
 })
 .then(function(data) {
     console.log(data);
+    console.log(data.results.sunrise);
+    console.log(data.results.sunset);
+    console.log(data.results.golden_hour);
+    console.log(data.results.timezone);
 })
