@@ -1,10 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
-    var geoDBURL = window.localStorage.getItem('geoDBURL');
-    console.log(geoDBURL);
+    var searchInputValue = window.localStorage.getItem('searchInputValue').toString();
+    console.log(searchInputValue);
     var options = JSON.parse(window.localStorage.getItem('options'))
     console.log(options);
+    var geoDBURL = 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix='+ searchInputValue +'&minPopulation=1000000&limit=10';
+    console.log(geoDBURL);
   
-fetch(geoDBURL, options.options)
+fetch(geoDBURL, options)
 .then(function(response) {
     return response.json();
 })

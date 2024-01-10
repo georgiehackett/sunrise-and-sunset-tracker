@@ -40,12 +40,13 @@ localStorage.getItem('userInput');
     const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${encodeURIComponent(
       searchInputValue
     )}&minPopulation=1000000&limit=10`;
-    window.localStorage.setItem('geoDBURL', url)
+    window.localStorage.setItem('searchInputValue', searchInputValue)
+    // console.log();
 
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": '727bf2a82fmshefe63c31b6e70d3p1bee3djsnb96f9b215838',
+        "X-RapidAPI-Key": '2bc7977f0fmsh03730ae70cbb1efp1bb187jsnc102c4435097',
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
         "Content-Type": "application/json",
       },
