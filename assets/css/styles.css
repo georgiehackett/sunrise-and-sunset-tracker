@@ -1,3 +1,99 @@
+.search-container {
+    position: left;
+    max-width: 400px; 
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* .search-container button {
+    position: absolute;
+    left: 40;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e9ebec;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+} */
+
+h1, h2, h3 , h4, h5, h6 {
+    padding: 25px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+  p {
+    font-family: 'Jura', sans-serif;
+  }
+  
+  :root {
+    --prim-colour: ;
+    --second-colour: ;
+    --tert-colour: ;
+  }
+
+#about_us{
+    display: flex;
+    font-family: verdana;
+    font-size: 3px;
+  }
+  
+.Hero-banner{
+    height: calc(100vh - 25px);
+    background-image: url(../images/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+  }
+
+  .btn:hover{
+    -webkit-box-shadow: 0 20px 40px rgba(72,78,85,.6);
+    box-shadow: 0 20px 40px rgba(72,78,85,.6);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
 .navbar-brand img {
     margin-right: 20px;
     background-position: center;
