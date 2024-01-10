@@ -12,6 +12,11 @@ fetch(geoDBURL, options)
 })
 .then(function(data) {
     console.log(data);
+
+    console.log(data.data[0]);
+
+    console.log(data.data[0].latitude);
+    console.log(data.data[0].longitude);
 })
 
   // Build URL to query sunrisesunset API
