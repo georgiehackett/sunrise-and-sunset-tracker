@@ -1,4 +1,3 @@
-
 .search-container {
     position: left;
     max-width: 400px; 
@@ -94,3 +93,8 @@ h1, h2, h3 , h4, h5, h6 {
 .dropdown-content li:hover {
   background-color: #ddd;
 }
+
+.navbar-brand img {
+    margin-right: 20px;
+    background-position: center;
+    }
