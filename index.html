@@ -65,14 +65,28 @@
 </div>
 </section>
   
-    <div id="search" class="search-container dropdown-container">
+    <!-- <div id="search" class="search-container dropdown-container">
         <input id="searchInput" type="text" class="search-input" placeholder="Search for a city here...">
         <a href="./assets/results.html">
         <button type="submit" class="search-button searchButton" id="searchButton">Search</button>
         <ul id="selectedCities" class="dropdown-content"></ul>
       </a>
-    </div>
+    </div> -->
+
+    <form class="row g-3 search-form">
+      <div class="col-auto dropdown-container">
+        <label for="" class="visually-hidden">Search for a city here...</label>
+        <input type="text" class="form-control search-input form-control-lg" id="searchInput" placeholder="Search for a city here...">
+        <ul id="selectedCities" class="dropdown-content"></ul>
+      </div>
+      <div class="col-auto search-container">
+        <a href="./assets/results.html">
+        <button type="submit" class="btn btn-primary mb-3 search-button searchButton" id="searchButton">Search</button>
+        </a>
+      </div>
+    </form>
 <div>
+  
   <h1> About Us</h1>
     <p id= "about_us"class="col-md-auto"> Welcome to Sunrise and Sunset Tracker, where you can find out the times of not only the sunrise & sunset - but also find out the optimal time for 'golden hour' relative to your chosen location using our suggestive search bar. <br>
       <br>
