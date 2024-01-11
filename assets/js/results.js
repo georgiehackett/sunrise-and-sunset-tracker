@@ -11,8 +11,9 @@ window.addEventListener("DOMContentLoaded", () => {
     "&minPopulation=1000000&limit=10";
 //   console.log(geoDBURL);
 
-//   var locationTitle = document.getElementById("location-title");
-//   console.log(locationTitle);
+  var locationTitle = document.getElementById("location-title");
+  console.log(locationTitle);
+  locationTitle.append(searchInputValue)
 
 fetch(geoDBURL, options)
     .then(function (response) {
