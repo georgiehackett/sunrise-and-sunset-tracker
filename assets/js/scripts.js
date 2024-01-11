@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-localStorage.getItem('userInput');
+  localStorage.getItem("userInput");
 
   const searchInput = document.getElementById("searchInput");
   const selectedCities = document.getElementById("selectedCities");
@@ -9,12 +9,12 @@ localStorage.getItem('userInput');
   const RATE_LIMIT_INTERVAL = 1000; // 1 request per second
   const uniqueCities = new Set();
 
-// console.log(searchInput);
+  // console.log(searchInput);
   searchInput.addEventListener("input", async () => {
     await searchCities();
   });
 
-//   console.log(searchButton);
+  //   console.log(searchButton);
   searchButton.addEventListener("click", async () => {
     await searchCities();
   });
@@ -39,19 +39,19 @@ localStorage.getItem('userInput');
 
     const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${encodeURIComponent(
       searchInputValue
-    )}&minPopulation=1000000&limit=10`;
-    window.localStorage.setItem('searchInputValue', searchInputValue)
+    )}&minPopulation=1000000&limit=3`;
+    window.localStorage.setItem("searchInputValue", searchInputValue);
     // console.log();
 
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": '2bc7977f0fmsh03730ae70cbb1efp1bb187jsnc102c4435097',
+        "X-RapidAPI-Key": "2bc7977f0fmsh03730ae70cbb1efp1bb187jsnc102c4435097",
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
         "Content-Type": "application/json",
       },
     };
-    window.localStorage.setItem('options', JSON.stringify(options));
+    window.localStorage.setItem("options", JSON.stringify(options));
 
     try {
       const response = await fetch(url, options);
@@ -98,5 +98,4 @@ localStorage.getItem('userInput');
       selectedCities.style.display = "none";
     }
   });
-
 });

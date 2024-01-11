@@ -1,16 +1,21 @@
 window.addEventListener("DOMContentLoaded", () => {
-  var searchInputValue = window.localStorage.getItem('searchInputValue').toString();
+  var searchInputValue = window.localStorage
+    .getItem("searchInputValue")
+    .toString();
   console.log(searchInputValue);
-  var options = JSON.parse(window.localStorage.getItem('options'));
+  var options = JSON.parse(window.localStorage.getItem("options"));
   console.log(options);
-  var geoDBURL = 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix='+ searchInputValue +'&minPopulation=1000000&limit=10';
+  var geoDBURL =
+    "https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=" +
+    searchInputValue +
+    "&minPopulation=1000000&limit=10";
   console.log(geoDBURL);
 
   fetch(geoDBURL, options)
-    .then(function(response) {
+    .then(function (response) {
       return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
 
       console.log(data.data[0]);
@@ -23,24 +28,23 @@ window.addEventListener("DOMContentLoaded", () => {
 
       // Create fetch call for the sunrisesunset API query
       fetch(sunriseSunsetURL)
-        .then(function(response) {
+        .then(function (response) {
           return response.json();
         })
-        .then(function(data) {
+        .then(function (data) {
           var sunrise = data.results.sunrise;
-          console.log("Sunrise: " + sunrise);
-
           var sunset = data.results.sunset;
-          console.log("Sunset: " + sunset);
-
           var goldenHour = data.results.golden_hour;
-          console.log("Golden Hour: " + goldenHour);
-
           var timezone = data.results.timezone;
-          console.log("Timezone: " + timezone);
+
+          // Update HTML elements with fetched data
+          document.getElementById("sunrise").textContent = sunrise;
+          document.getElementById("sunset").textContent = sunset;
+          document.getElementById("golden-hour").textContent = goldenHour;
+          document.getElementById("timezone").textContent = timezone;
+        })
+        .catch(function (error) {
+          console.error("Error fetching sunrise-sunset data:", error);
         });
-    })
-    .catch(function(error) {
-      console.error('Error fetching city data:', error);
     });
 });
