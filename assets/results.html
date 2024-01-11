@@ -12,6 +12,34 @@
   </head>
   <body>
 
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+       <span class="navbar-brand mb-0 h1"><img src="./images/download.jpg" class="rounded-circle" alt="Bootstrap" width="50" height="50">Sunrise and Sunset Tracker</span>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarNavAltMarkup"
+         aria-controls="navbarNavAltMarkup"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div
+         class="collapse navbar-collapse justify-content-end"
+         id="navbarNavAltMarkup"
+       >
+         <div class="navbar-nav">
+           <a class="nav-link" href="../index.html">Home</a>
+           <a class="nav-link" href="../index.html#search">Search</a>
+           <a class="nav-link" href="../index.html#about_us">About Us</a>
+           <a class="nav-link" href="../index.html#contact">Contact</a>
+</div>
+   </nav>    
+</header>
+
     <section>
         <div class="Hero-banner-resultsgif">
         <div class="container-fluid py-5 Hero">
@@ -26,7 +54,7 @@
 <div class="card" id="results-card" style="width:100%">
   <img class="card-img-top" src="" alt="Card image cap">
   <div class="card-body">
-      <h5 class="card-title">Result One</h5>
+      <h5 class="card-title" id="location-title"></h5>
       <p class="card-text">Sunrise: <span id="sunrise"></span></p>
       <p class="card-text">Sunset: <span id="sunset"></span></p>
       <p class="card-text">Golden Hour: <span id="golden-hour"></span></p>
