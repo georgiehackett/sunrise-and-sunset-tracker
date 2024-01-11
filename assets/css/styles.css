@@ -1,8 +1,9 @@
 .search-form {
    /* position: right; */
     /* max-width: 400px;  */
-    /* padding-top: 100px; */
-    /* margin: 25px; */
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 25px;
     /* margin-top: 50px; */
     /* display: flex; */
     /* justify-content: center; */
