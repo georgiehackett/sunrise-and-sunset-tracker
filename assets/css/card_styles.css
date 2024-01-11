@@ -7,12 +7,19 @@
     align-items: center;
     justify-content: center;
 }
+
+#location-title {
+    font-family: 'Jura', sans-serif;
+    padding-left: 0;
+}
+
 .results-cards{
     padding: 20px;
     margin: auto;
     display: flex;
     justify-content: center;
 }
+
 .card {
     margin: 20px;
     padding: 20px;

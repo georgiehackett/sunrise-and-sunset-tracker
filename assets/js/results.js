@@ -22,7 +22,7 @@ fetch(geoDBURL, options)
     .then(function (data) {
       console.log(data);
 
-      console.log(data.data[0]);
+    //   console.log(data.data[0]);
 
       var lat = data.data[0].latitude;
       var lng = data.data[0].longitude;
