@@ -111,3 +111,21 @@ h1, h2, h3 , h4, h5, h6 {
 #form {
   padding: 30px;
 }
+
+.name_field, .email_field, .comments_field {
+  padding-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#submit {
+  text-align: center;
+  color: black;
+}
+
+#SubmutBtn {
+  border-radius: 5px;
+}
