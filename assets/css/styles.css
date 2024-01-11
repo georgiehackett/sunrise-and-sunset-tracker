@@ -46,7 +46,8 @@ h1, h2, h3 , h4, h5, h6 {
 #about_us{
     display: flex;
     font-family: verdana;
-    font-size: 3px;
+    font-size: 30px;
+    padding: 40px;
   }
   
 .Hero-banner{
@@ -106,3 +107,7 @@ h1, h2, h3 , h4, h5, h6 {
     margin-right: 20px;
     background-position: center;
     }
+
+#form {
+  padding: 30px;
+}
