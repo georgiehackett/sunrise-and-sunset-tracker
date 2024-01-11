@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "2bc7977f0fmsh03730ae70cbb1efp1bb187jsnc102c4435097",
+        "X-RapidAPI-Key": "527d223544msh7593dbae3035a4ap1bd98ajsn52505d117ee2",
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
         "Content-Type": "application/json",
       },

@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+#location-title {
+    font-family: 'Jura', sans-serif;
+}
+
 .results-cards{
     padding: 20px;
     margin: auto;
