@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  localStorage.getItem("userInput");
+//   localStorage.getItem("userInput");
 
   const searchInput = document.getElementById("searchInput");
   const selectedCities = document.getElementById("selectedCities");
@@ -41,7 +41,6 @@ window.addEventListener("DOMContentLoaded", () => {
       searchInputValue
     )}&minPopulation=1000000&limit=3`;
     window.localStorage.setItem("searchInputValue", searchInputValue);
-    // console.log();
 
     const options = {
       method: "GET",
@@ -91,7 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
       console.error(error);
     }
   }
-
   // Hide the dropdown when clicking outside of it
   document.addEventListener("click", function (event) {
     if (!event.target.closest(".dropdown-container")) {

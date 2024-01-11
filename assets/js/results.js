@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   var searchInputValue = window.localStorage
     .getItem("searchInputValue")
-    .toString();
+    .trim().replace(',', '');
 //   console.log(searchInputValue);
   var options = JSON.parse(window.localStorage.getItem("options"));
 //   console.log(options);
@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", () => {
     "&minPopulation=1000000&limit=10";
 //   console.log(geoDBURL);
 
+// assign location-title to a variable and append the inputted location
   var locationTitle = document.getElementById("location-title");
-  console.log(locationTitle);
   locationTitle.append(searchInputValue)
 
 fetch(geoDBURL, options)
