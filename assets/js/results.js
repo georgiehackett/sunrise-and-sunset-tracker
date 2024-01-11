@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   var searchInputValue = window.localStorage
     .getItem("searchInputValue")
-    .toString();
+    .trim().replace(',', '');
 //   console.log(searchInputValue);
   var options = JSON.parse(window.localStorage.getItem("options"));
 //   console.log(options);
