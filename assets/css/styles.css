@@ -32,13 +32,17 @@
     margin: auto;
 }
 
-h1, h2, h3 , h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     padding: 25px;
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-  p {
+  p, h3 {
     font-family: 'Jura', sans-serif;
+  }
+
+  h3 {
+    padding: 25px;
   }
   
   :root {
