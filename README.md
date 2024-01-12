@@ -32,7 +32,7 @@ To use the Sunrise and Sunset Tracker:
 
 3. To view the results, click the search button.
 
-4. The results page with your chosen city to fetch data from the sunrisesunset API and display information on the location. If the data doesn't appear on the results page straight away, try refreshing.
+4. The results page uses the sunrisesunset API to fetch data for the times of sunrise, sunset and golden hour for your city. If the data doesn't appear on the results page straight away, try refreshing.
 
 The app's functionality should resemble the following:
 
