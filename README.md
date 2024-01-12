@@ -23,8 +23,8 @@ To use the Sunrise and Sunset Tracker:
 
 3. To view the results for your chosen city, either autocomplete by clicking an option from the drop-down or finish typing and click the search button.
 
-4. The results page with your chosen city to fetch data from the sunrisesunset API and display information on the location. 
+4. The results page with your chosen city to fetch data from the sunrisesunset API and display information on the location. If the data doesn't appear on the results page straight away, try refreshing.
 
-The app's functionality should resemble the following mock-up:
+The app's functionality should resemble the following:
 
-![alt text]()
+![app screenrecording](./assets/images/sunrise-tracker-screen-recording.gif)
