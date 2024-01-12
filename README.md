@@ -8,6 +8,14 @@ This application allows the user to access sunset and sunrise data as well as ta
 
 The motivation behind this project includes initially finding inspiration in travel API’s - in the sense that this combination of API’s would have a good chance of working together successfully.
 
+## User Stories
+
+```md
+AS A nature enthusiast
+I WANT to track the sunrise and sunset times of a specific location
+SO THAT I can plan my outdoor activities and enjoy the beauty of nature during optimal times
+```
+
 ## Installation
 
 You can install the project on your local machine by cloning or downloading the repository.
@@ -28,3 +36,12 @@ To use the Sunrise and Sunset Tracker:
 The app's functionality should resemble the following:
 
 ![app screenrecording](./assets/images/sunrise-tracker-screen-recording.gif)
+
+## Credits
+
+Contributors:
+
+* https://github.com/abdeeg
+* https://github.com/AngelikaWidz
+* https://github.com/Calvin-Manu
+* https://github.com/georgiehackett
